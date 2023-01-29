@@ -1,12 +1,12 @@
 import React from "react";
 
-function Navbar() {
+function Navbar(props) {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            LOGINPAGE
+            {props.title}
           </a>
           <button
             className="navbar-toggler"
@@ -49,8 +49,8 @@ function Navbar() {
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
-                      Another action
+                    <a className="dropdown-item" href="/contact">
+                      Contact
                     </a>
                   </li>
                   <li>

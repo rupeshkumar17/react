@@ -5,6 +5,7 @@ import Login from "./Login";
 import About from "./About";
 import Contact from "./Contact";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Count from "./Count";
 
 const HomePage = () => {
   return (
@@ -15,7 +16,9 @@ const HomePage = () => {
       <Login /> */}
 
       <BrowserRouter>
-        <div className="navbars">Hello from HomePage</div>
+        <div className="navbars">
+          Hello from Homepage <Count />
+        </div>
         <Navbar title="login" />
         <Routes>
           {/* <Route path="/navbar" element={<Navbar title="login" />} /> */}
